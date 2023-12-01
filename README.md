@@ -50,8 +50,7 @@ It will return
 This application consist on an endpoint that get the price of a product. If there is more than one price available in the database, it gets the one
 with more priority. There is an unspecified scenario, what should happen when there are two prices with same priority for the same product, dates and
 brand? I think this can be fixed with two different approaches:
-- Throw an exception if two prices are created with same priority, brand, dates and product. In the case that the search request finds more
-  than one price, throw an exception.
+- Throw an exception if two prices are created with same priority, brand, dates and product.
 - Add one extra criteria: get the last created price, for example.
 
 ## Architecture
